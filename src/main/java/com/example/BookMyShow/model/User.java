@@ -10,7 +10,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
-
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

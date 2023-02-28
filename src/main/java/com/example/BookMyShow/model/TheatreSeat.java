@@ -11,6 +11,8 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 public class TheatreSeat {
+     
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

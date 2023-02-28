@@ -22,7 +22,7 @@ public class Theatre {
     @OneToMany(mappedBy = "theatre",cascade = CascadeType.ALL)
     private List<TheatreSeat> theatreSeatList;
 
-    // for bidirectional mapping with the show to be done
+    // for bidirectional mapping with the show to be  done
     @OneToMany(mappedBy = "theatre",cascade = CascadeType.ALL)
     private List<Show> theatreShowList;
 }
