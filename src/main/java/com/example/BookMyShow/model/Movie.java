@@ -27,7 +27,4 @@ public class Movie {
     private List<Show> movieShowList;
 
 
-
-
-
 }

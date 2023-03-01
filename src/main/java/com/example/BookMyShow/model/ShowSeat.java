@@ -18,7 +18,6 @@ public class ShowSeat {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int id;
-@Column(unique = true,nullable = false)
 private String seatNo;
 private boolean isBooked;
 private int price;

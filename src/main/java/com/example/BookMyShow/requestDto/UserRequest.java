@@ -9,6 +9,7 @@ import javax.persistence.Column;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserRequest {
+    private String name;
 
     @Column(unique = true, nullable = false)
     private String email;

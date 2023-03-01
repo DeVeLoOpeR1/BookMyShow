@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.UUID;
 
 @Entity
@@ -16,10 +17,10 @@ public class Ticket {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private int id;
-private String ticketId = String.valueOf(UUID.randomUUID());
+private String ticketId = UUID.randomUUID().toString();
 private int totalPrice;
 private String movieName;
-private String showTiming;
+private LocalTime showTiming;
 private LocalDate showDate;
 private String theaterName;
 
